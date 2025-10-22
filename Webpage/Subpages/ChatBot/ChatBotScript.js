@@ -87,7 +87,7 @@ inputUser.addEventListener("keydown", function (event) {
                 return [4 /*yield*/, fetch("https://openrouter.ai/api/v1/chat/completions", {
                         method: "POST",
                         headers: {
-                            "Authorization": "Bearer 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",
+                            "Authorization": "Bearer < API Key Here! >",
                             "Content-Type": "application/json"
                         },
                         body: JSON.stringify({
