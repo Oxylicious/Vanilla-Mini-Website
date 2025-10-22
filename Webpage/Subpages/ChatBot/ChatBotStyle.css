@@ -1,0 +1,210 @@
+/* =============================================== Fonts =============================================== */
+
+/* Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Ananias */
+@font-face {
+    font-family: Ananias;
+    src: url("Assets/fonts/Ananias.ttf");
+}
+
+/* ===================================================================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Assets/pictures/abstract-landscape-minimalist-brown-aesthetic-m9gktxj5gldazuuu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} .blur-body {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.345);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+/* Header Content */
+.header-format {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    padding-top: 1.5%
+} .header-container {
+    display: flex;
+    background-color: rgba(255, 228, 196, 0.553);
+    border-radius: 50px;
+    width: 80vw;
+} .header-title {
+    text-align: center;
+    color: brown;
+    width: 100%;
+    font-family: Ananias, sans-serif;
+}
+
+.home-button {
+    align-self: center;
+    margin-left: 1%;
+    border: transparent;
+    border-radius: 50px;
+    background-color: rgb(186, 145, 92);
+    height: 7.6vh;
+    width: 8vh;
+    cursor: pointer;
+    transition: background-color ease 0.3s;
+} .home-button:hover {
+    background-color: rgb(123, 94, 57);
+}
+
+.icon-format img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: auto;
+}
+
+/* Content Body */
+.content-body {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+} .content-box {
+    position: relative;
+    height: 75vh;
+    width: 75vw;
+    border-radius: 20px;
+    background-color: rgba(214, 183, 137, 0.634);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.299);
+} 
+
+.user-reply-format {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5%;
+    width: 100%;
+    height: 30vh;
+} .user-reply {
+    height: 20vh;
+    width: 55vw;
+    margin-right: 3%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(114, 97, 83, 0.696);
+    background-color: blanchedalmond;
+} .user-image img {
+    position: absolute;
+    right: -1%;
+    top: 1%;
+    height: 15vh;
+    width: auto;
+} .user-output {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    margin-top: 1%;
+    margin-left: 2%;
+    height: 18vh;
+    width: 48.5vw;
+    overflow-y: auto;
+} .user-output::-webkit-scrollbar {
+    background-color: transparent;
+    width: 6px;
+} .user-output::-webkit-scrollbar-thumb {
+    background-color: rgba(95, 83, 70, 0.384);
+    border-radius: 10px;
+}
+
+.chatbot-reply-format {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+} .chatbot-reply {
+    height: 20vh;
+    width: 55vw;
+    margin-left: 3%;
+    border-radius: 20px;
+    box-shadow: -3px 3px 10px rgba(114, 97, 83, 0.696);
+    background-color: blanchedalmond;
+} .chatbot-image img {
+    position: absolute;
+    left: -1%;
+    top: 1%;
+    height: 15vh;
+    width: auto;
+} .chatbot-output {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    height: 18vh;
+    width: 50vw;
+    margin-left: 8%;
+    margin-top: 1%;
+    overflow-y: auto;
+} .chatbot-output::-webkit-scrollbar {
+    background-color: transparent;
+    width: 6px;
+} .chatbot-output::-webkit-scrollbar-thumb {
+    background-color: rgba(95, 83, 70, 0.384);
+    border-radius: 10px;
+}
+
+/* Reply Message Here */
+
+.reply-format {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+} .reply-box {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: 70vw;
+    border-radius: 50px;
+    background-color: rgba(255, 228, 196, 0.553);
+} .reply-input {
+    font-size: 1.1em;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    padding-top: 0.8%;
+    box-sizing: border-box;
+    color: brown;
+    height: 5vh;
+    width: 62vw;
+    resize: none;
+    overflow-y: auto;
+    margin-left: 2%;
+} .reply-input::placeholder {
+    color: rgba(165, 42, 42, 0.338);
+} .reply-input::-webkit-scrollbar {
+    background: transparent;
+    width: 6px;
+} .reply-input::-webkit-scrollbar-thumb {
+    background-color: rgba(95, 83, 70, 0.384);
+    border-radius: 10px;
+}
+
+.send-button {
+    margin-left: 2%;
+    border: transparent;
+    border-radius: 50px;
+    background-color: rgb(186, 145, 92);
+    height: 6vh;
+    width: 4vw;
+    cursor: pointer;
+    transition: background-color ease 0.3s;
+} .send-button:hover {
+    background-color: rgb(123, 94, 57);
+}

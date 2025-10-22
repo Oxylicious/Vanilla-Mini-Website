@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="ChatBotStyle.css">
+        <link rel="icon" href="data:image/svg+xml,
+            <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+                <text y=%22.9em%22 font-size=%2290%22>🤖</text>
+            </svg>">
+    </head>
+    <body>
+        <!-- Container -->
+        <div class="blur-body">
+            <!-- Top Head -->
+            <div class="header-format">
+                <div class="header-container">
+                    <!-- Button -->
+                    <button type="button" id="home-button" class="home-button">
+                        <div class="icon-format">
+                            <img src="Assets/pictures/home.png" alt="home.png">
+                        </div>
+                    </button>
+                    <!-- Header -->
+                    <h1 class="header-title">
+                        Chat with <span style="color: rgb(221, 154, 47);">Oxy-Bot</span> 🤖
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Content Message Body -->
+            <div class="content-body">
+                <div class="content-box">
+
+                    <!-- User Section -->
+                    <div class="user-reply-format">
+                        <div class="user-image">
+                            <img src="Assets/pictures/user.png" alt="user.png">
+                        </div>
+                        <div class="user-reply">
+                            <div class="user-output" id="user-output"></div>
+                        </div>   
+                    </div>
+
+                    <!-- ChatBot Section -->
+                    <div class="chatbot-reply-format">
+                        <div class="chatbot-image">
+                            <img src="Assets/pictures/oxybot.png" alt="OXYBOT.png">
+                        </div>
+                        <div class="chatbot-reply">
+                            <div class="chatbot-output" id="chatbot-output">
+                                Hello there! Wanna chat with me? 😎
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reply Here -->
+                    <div class="reply-format">
+                        <div class="reply-box">
+                            <textarea id="reply-input" class="reply-input" placeholder="Reply Here! 📨"></textarea>
+                            <button type="button" class="send-button" id="send-button">
+                                <div class="icon-format">
+                                    <img src="Assets/pictures/send.png" alt="send.png">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="ChatBotScript.js"></script>
+    </body>
+</html>

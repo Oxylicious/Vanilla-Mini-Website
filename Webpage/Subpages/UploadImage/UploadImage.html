@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload Image Page</title>
+        <link rel="stylesheet" href="UploadImageStyle.css">
+        <link rel="icon" href="data:image/svg+xml,
+            <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+                <text y=%22.9em%22 font-size=%2290%22>☁️</text>
+            </svg>">
+    </head>
+    <body>
+        <div class="blur-body">
+            <div class="home-button-format" id="home-button">
+                <img src="Assets/Pictures/Icon Maker.png" alt="home.png">
+            </div>
+            <div class="upload-container">
+                <div class="upload-box">
+                    <div class="upload-output-area">
+                        <div class="upload-output" id="upload-output">Upload Output Here!</div>
+                    </div>
+                    <div class="form-format">
+                        <form id="upload-form" class="upload-form">
+                            <input type="file" id="file-inputID" hidden>
+                            <!-- Choose File Button -->
+                            <label for="file-inputID" class="upload-input" id="upload-label">Choose File 🗃️</label>
+                            <button type="submit" class="submit-button">Submit ✅</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="UploadImageScript.js"></script>
+    </body>
+</html>
